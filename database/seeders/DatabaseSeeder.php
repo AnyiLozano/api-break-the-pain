@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Status;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,6 +14,16 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        Status::create([
+            'name' => 'activo',
+            'model' => 'All',
+            'color_status' => '#fff'
+        ]);
+
+        Status::create([
+            'name' => 'inactivo',
+            'model' => 'All',
+            'color_status' => '#fff'
+        ]);
     }
 }
