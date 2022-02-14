@@ -14,7 +14,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Status::create([
+        Status::create([   
             'name' => 'activo',
             'model' => 'All',
             'color_status' => '#fff'
